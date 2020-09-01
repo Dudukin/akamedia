@@ -375,7 +375,6 @@ canvas {
     height: 200vw;
     color: #fefefe;
     background: rgba(0, 0, 0, 0.93);
-    border-radius: 50%;
     transition: all 0.4s ease;
     flex: none;
     transform: scale(0);
