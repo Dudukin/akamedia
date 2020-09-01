@@ -644,35 +644,26 @@ function resizeCanvas2(){
 })();
 
 (function scrollTop() {
-  var basicScrollTop = function () {  
-  // The button
-  var btnTop = document.querySelector('#gotop');
-  // Reveal the button
 
-if (btnTop) {
-    var btnReveal = function () { 
-    if (window.scrollY >= 300) {
-      btnTop.classList.add('gotop__visible');
+
+  window.onscroll = function() {
+    let toTop = document.getElementById('gotop');
+    if (window.pageYOffset > 100) {
+      toTop.classList.add('gotop__visible');
     } else {
-      btnTop.classList.remove('gotop__visible');
-    }    
-  }  
-  // Smooth scroll top
-  // Thanks to => http://stackoverflow.com/a/22610562
-  var TopscrollTo = function () {
-    if(window.scrollY!=0) {
-      setTimeout(function() {
-        window.scrollTo(0,window.scrollY-30);
-        TopscrollTo();
-      }, 5);
+      toTop.classList.remove('gotop__visible');
     }
-  }
-  // Listeners
-  window.addEventListener('scroll', btnReveal);
-  btnTop.addEventListener('click', TopscrollTo);  
-}  
-};
-basicScrollTop();
+  };
+
+
+    let toTop = document.getElementById('gotop');
+
+    if (toTop) {
+      toTop.addEventListener('click', function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      })
+    }
+
 })();
 
 

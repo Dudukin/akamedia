@@ -37,9 +37,6 @@
 	.screen__text {
 		font-size: 36px;
 	}
-	.page__title p {
-		padding: 0 50px;
-	}
 	.services__item {
 		max-width: unset;
 		text-align: center;
@@ -112,5 +109,20 @@
 		width: 100% !important;
 		align-items: center !important;
 		right: 0;
+	}
+
+	.services {
+		padding-top: 150px;
+	}
+	.page__title {
+		margin-bottom: 75px;
+	}
+
+	.screen__text {
+		font-size: 26px;
+	}
+
+	div.header__social {
+		bottom: 0;
 	}
 }
