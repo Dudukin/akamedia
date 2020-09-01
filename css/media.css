@@ -1,0 +1,116 @@
+@media screen and (max-width: 1200px) {
+
+	.services__item {
+		margin: 50px 0;
+	}
+	.more__btn {
+		margin-left: 30px;
+	}
+
+	.keynote__team {
+		justify-content: space-around;
+	}
+
+	.keynote__member {
+		margin: 50px 0;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.screen__text {
+		padding: 0 50px;
+	}
+
+	.clients__items {
+		justify-content: space-around;
+	}
+
+	.clients__items img {
+		width: 26%;
+		margin: 15px 0;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+	.screen__text {
+		font-size: 36px;
+	}
+	.page__title p {
+		padding: 0 50px;
+	}
+	.services__item {
+		max-width: unset;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.screen__btns_wrapper a {
+		margin: 10px 20px;
+	}
+
+	.screen__btns_wrapper {
+		flex-direction: column;
+	}
+
+	.header__menu_btn p {
+		display: none;
+	}
+	.services__item p {
+		font-size: 48px;
+	}
+
+	.services__item span {
+		font-size: 20px;
+	}
+	.page__title p {
+		font-size: 26px;
+	}
+
+	.keynote__title p {
+		font-size: 20px;
+	}
+
+	.keynote__member {
+		width: 100%;
+		align-items: center;
+	}
+	.keynote__member_img {
+		width: 100%;
+	}
+	.keynote__member_img > img {
+		width: 100%;
+	}
+
+	.awards__title p {
+		font-size: 20px;
+	}
+	.clients__items img {
+		width: 41%;
+		margin: 15px 0;
+	}
+
+	.keynote__member_hover h3 {
+		font-size: 20px;
+	}
+
+	.keynote__member_hover p {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.keynote__member_hover span {
+		text-align: center;
+	}
+	.burger__menu .menu > div > div > ul > li > a {
+		font-size: 36px;
+	}
+
+	div.header__social {
+		width: 100% !important;
+		align-items: center !important;
+		right: 0;
+	}
+}

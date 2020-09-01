@@ -1,79 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-	<header class="header">
-		<div class="container">
-			<div class="header__inner">
-				<a href="#" class="header__logo">
-					<img src="img/logo.svg" alt="AKA Media">
-				</a>
-				<div class="header__menu_btn">
-					<p>Create</p>
-					<div>
-						<div></div>
-						<div></div>
-						<div></div>
-					</div>
-				</div>
-				<div class="burger__menu">
-				  <input class="burger__menu_toggle" type="checkbox" style="display: none;">
-				  <div class="menu">
-				  	<span class="burger__menu_close">
-						<svg viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg"><path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/></svg>
-					</span>
-				    <div>
-				      <div>
-				        <ul>
-				          <li><a href="#">About</a></li>
-				          <li><a href="#">Products</a></li>
-				          <li><a href="#">Blog</a></li>
-				          <li><a href="#">Contact</a></li>
-				        </ul>
-				      </div>
-				    </div>
-				  </div>
-			</div>
-		</div>
-	</header>
-	<section class="screen">
-		<div class="container">
-			<!-- <div class="screen__background"> -->
-				<div id="wrapper" class="wrapper uk-offcanvas-content">
-				   <canvas id="canvas"></canvas>
-				   <div id="loader" class="loader">
-				   </div>
-				   <div id="controls" class="controls">
-				   </div>
-				   <div id="note" class="note"></div>
-				</div>
-			<!-- </div> -->
-			<div class="screen__inner">
-				<div>
-					<p class="screen__text">
-					Our passion is for great innovative content and digital solutions for the new age
-				</p>
-				<div class="screen__btns_wrapper">
-					<a href="#" class="btn btn__empty">
-						Works
-						<span></span><span></span><span></span><span></span>
-					</a>
-					<a href="#" class="btn btn__orange">
-						About
-						<span></span><span></span><span></span><span></span>
-					</a>
-				</div>
-				</div>
-			</div>
-		</div>
-	</section>
+   <head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/media.css">
+      <link rel="stylesheet" href="css/animate.css">
+      <script src="js/wow.js"></script>
+   </head>
+   <body class="index-page">
+      <header class="header header__opacity">
+         <div class="container">
+         <div class="header__inner">
+            <a href="#" class="header__logo">
+            <img src="img/logo.svg" alt="AKA Media">
+            </a>
+            <div class="header__menu_btn">
+               <p>Create</p>
+               <div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+               </div>
+            </div>
+            <div class="burger__menu">
+               <input class="burger__menu_toggle" type="checkbox" style="display: none;">
+               <div class="menu">
+                  <span class="burger__menu_close">
+                     <svg viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+                     </svg>
+                  </span>
+                  <div>
+                     <div>
+                        <ul>
+                           <li><a href="#">About</a></li>
+                           <li><a href="#">Products</a></li>
+                           <li><a href="#">Blog</a></li>
+                           <li><a href="#">Contact</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                              <div class="header__social">
+            	<p>Follow us</p>
+            	<div>
+            		<a href="#" class="header__social_link">Fb</a>
+            		<a href="#" class="header__social_link">In</a>
+            		<a href="#" class="header__social_link">Lin</a>
+            		<a href="#" class="header__social_link header__social_link-active">Vim</a>
+            	</div>
+            </div>
+               </div>
+            </div>
 
-	<script src="js/three.js"></script>
-	<script src="js/anime.js"></script>
-	<script src="js/main.js"></script>
-</body>
+         </div>
+      </header>
+      <section class="screen">
+         <div class="container">
+            <div id="wrapper" class="wrapper uk-offcanvas-content">
+               <canvas id="canvas"></canvas>
+               <div id="loader" class="loader">
+               </div>
+               <div id="controls" class="controls">
+               </div>
+               <div id="note" class="note"></div>
+            </div>
+            <div class="screen__inner">
+               <div>
+                  <p class="screen__text" id="typed">
+                     
+                  </p>
+                  <div class="screen__btns_wrapper screen__btns_opacity">
+                     <a href="#" class="btn btn__empty">
+                     Works
+                     <span></span><span></span><span></span><span></span>
+                     </a>
+                     <a href="#" class="btn btn__orange">
+                     About
+                     <span></span><span></span><span></span><span></span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <script src="js/three.js"></script>
+      <script src="js/anime.js"></script>
+	  <script src="js/typed.js"></script>
+      <script src="js/main.js"></script>
+   </body>
 </html>
