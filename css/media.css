@@ -57,6 +57,9 @@
     right: calc(50% - 350px);
 
 	}
+	.works .more__btn {
+		margin: 0;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -252,5 +255,23 @@
 	}
 	.works__info {
 		padding-left: 60px;
+	}
+
+	.works {
+		padding-top: 150px;
+	}
+
+	.works__item {
+		margin-bottom: 75px;
+	}
+
+	.blog {
+		padding-top: 150px;
+	}
+	.contact {
+		padding-top: 150px;
+	}
+	.location {
+		padding-top: 150px;
 	}
 }
