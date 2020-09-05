@@ -1,3 +1,11 @@
+@media screen and (max-width: 1600px) {
+	.works__info {
+		right: 0;
+	}
+	.works__item:nth-child(even) .works__info {
+		left: -200px;
+	}
+}
 @media screen and (max-width: 1200px) {
 
 	.services__item {
@@ -15,6 +23,40 @@
 		margin: 50px 0;
 	}
 
+	.blog__items {
+		justify-content: space-around;
+	}
+
+	.blog__item .more__btn {
+		margin-left: 0;
+	}
+
+	.map__form form .more__btn {
+		margin-left: 0;
+	}
+
+	.location__items {
+		justify-content: space-around;
+	}
+
+	.works__item {
+		display: flex;
+		justify-content: center;
+	}
+	.works__item img {
+		width: 100%;
+		height: unset;
+	}
+	.works__info {
+    right: calc(50% - 350px);
+    width: 700px;
+    /* right: 0; */
+}
+	.works__item:nth-child(even) .works__info {
+		left: unset;
+    right: calc(50% - 350px);
+
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -30,7 +72,26 @@
 		width: 26%;
 		margin: 15px 0;
 	}
+	.blog__item {
+		width: 100%;
+	}
 
+	.post__video {
+		height: 400px;
+	}
+	.works__info h2 {
+		font-size: 30px;
+	}
+	.works__info {
+    right: calc(50% - 250px);
+    width: 500px;
+    /* right: 0; */
+}
+	.works__item:nth-child(even) .works__info {
+
+    right: calc(50% - 250px);
+
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -41,6 +102,48 @@
 		max-width: unset;
 		text-align: center;
 	}
+	.contact__place {
+		width: 100%;
+	}
+
+	.contact__places {
+		flex-wrap: wrap;
+    	text-align: center;
+	}
+
+	.contact__place {
+		margin-bottom: 50px;
+	}
+	.map {
+		margin-top: 50px;
+	}
+	.post__video {
+		height: 300px;
+	}
+	.works__info_btn {
+		    right: 20px;
+    bottom: 37px;
+	}
+	.works__info h2 {
+    font-size: 21px;
+}
+.works__info {
+    width: 100%;
+    right: 0;
+    height: 220px;
+    padding-right: 20px;
+}
+.works__item:nth-child(even) .works__info {
+    width: 100%;
+    right: 0;
+    height: 220px;
+    padding-right: 20px;
+}
+.works__info_vertical {
+	    padding-right: 30px;
+    left: -27px;
+        bottom: 62px;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -124,5 +227,30 @@
 
 	div.header__social {
 		bottom: 0;
+	}
+	.post__video {
+		height: 200px;
+	}
+	.post__pagination_prev svg {
+		margin-right: 20px;
+	}
+	.post__pagination_next svg {
+		margin-left: 20px;
+	}
+	.location__item {
+		min-width: unset;
+		width: 100%;
+	}
+	.works__item {
+		flex-direction: column;
+	}
+	.works__info {
+		position: static;
+	}
+	.works__info_vertical {
+		left: -50px;
+	}
+	.works__info {
+		padding-left: 60px;
 	}
 }
